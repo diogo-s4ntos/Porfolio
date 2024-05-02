@@ -49,6 +49,7 @@ section{
     position: relative;
     font-size: 1.4em;
     white-space: nowrap;
+    overflow: hidden;
 }
 
 #office::before{
