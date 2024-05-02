@@ -46,10 +46,10 @@ section{
 
 #office{
     width: 13rem;
+    max-width: 14rem;
     position: relative;
     font-size: 1.4em;
     white-space: nowrap;
-    overflow: hidden;
 }
 
 #office::before{
