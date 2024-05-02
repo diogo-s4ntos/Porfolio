@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary);
+}
+
+section{
+    min-height: calc(100lvh - 5.8rem);
+    padding: 1rem 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#about{
+    width: 55rem;
+    max-width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+#about h1, #tools h1{
+    color: var(--secondary);
+    text-shadow: 0px 0px 10px var(--secondary);
+    font-size: 3em;
+}
+
+#about p{
+    color: var(--text);
+    font-size: 1.1em;
+}
+
+#tools{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.row img{
+    width: 3rem;
+}
+
+@media screen and (max-width: 1020px) {
+    section{
+        padding: 1rem;
+        flex-direction: column;
+    }
+}

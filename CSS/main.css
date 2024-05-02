@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary);
+}
+
+section{
+    min-height: calc(100lvh - 5.8rem);
+    padding: 1rem 12rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#avatar{
+    width: 25rem;
+    padding-top: 1rem;
+    border-radius: 25px;
+    box-shadow: inset 7px 7px 9px #323232,
+            inset -7px -7px 9px #444444;
+}
+
+#main-info{
+    position: relative;
+    color: var(--text);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+#main-info h1{
+    font-size: 4em;
+}
+
+#special-text{
+    color: var(--secondary);
+    text-shadow: 0px 0px 5px var(--secondary);
+    white-space: nowrap;
+}
+
+#office{
+    width: 13rem;
+    position: relative;
+    font-size: 1.4em;
+}
+
+#office::before{
+    content: '';
+    animation: infoSpan 20s infinite;
+}
+
+@keyframes infoSpan {
+    0%,100%{
+        content: "Front-end Developer";
+    }
+}
+
+#office::after{
+    content: '';
+    position: absolute;
+    right: -.4rem;
+    width: calc(100% + .4rem);
+    height: 100%;
+    background-color: var(--primary);
+    border-left: 2px solid var(--secondary);
+    animation: cursor .8s infinite, write 20s steps(15) infinite;
+}
+
+@keyframes write {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + .4rem);
+    }
+}
+
+@keyframes cursor {
+    0%{
+        border-left: 2px solid var(--primary);
+    }
+}
+
+#cv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cv a{
+    color: var(--text);
+    text-decoration: none;
+    border: 2px solid var(--secondary);
+    border-radius: 15px;
+    box-shadow: 0px 5px 1px var(--secondary);
+    padding: 1rem;
+}
+
+#cv a:active{
+    transform: translateY(5px);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 1020px) {
+    section{
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    #avatar{
+        width: 20rem;
+    }    
+
+    #main-info h1{
+        font-size: 3.2em;
+    }
+}
