@@ -46,7 +46,6 @@ section{
 
 #office{
     width: 13rem;
-    max-width: 14rem;
     position: relative;
     font-size: 1.4em;
     white-space: nowrap;
@@ -121,5 +120,11 @@ section{
 
     #main-info h1{
         font-size: 3.2em;
+    }
+}
+
+@media screen and (max-width: 430px){
+    #office{
+        font-size: 1.2em;
     }
 }
