@@ -1,28 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--primary);
-}
-
-section{
+#contact{
     min-height: calc(100lvh - 5.8rem);
-    padding: 1rem 12rem;
+    padding: 4.8rem 12rem 1rem 12rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
     justify-content: center;
-}
-
-section h1{
-    color: var(--secondary);
-    font-size: 4em;
-    text-shadow: 0px 0px 5px var(--secondary);
 }
 
 form{
@@ -35,7 +18,7 @@ form{
 
 form input, textarea, button{
     color: var(--text);
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: var(--primary);
     border: 2px solid var(--secondary);
     border-radius: 15px;
@@ -46,10 +29,15 @@ form input{
     grid-column: span 2;
 }
 
+#email-adress{
+    grid-column: span 4;
+}
+
 textarea{
     grid-column: span 4;
     resize: none;
     height: 10rem;
+    font-size: .9em;
 }
 
 button{
@@ -64,8 +52,8 @@ button:active{
 }
 
 @media screen and (max-width: 1020px) {
-    section{
-        padding: 1rem;
+    #contact{
+        padding: 4.8rem 1rem 1rem 1rem;
         flex-direction: column;
         align-items: center;
     }
