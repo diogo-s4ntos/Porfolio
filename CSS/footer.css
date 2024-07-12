@@ -14,52 +14,6 @@ footer div{
     gap: 1rem;
 }
 
-#footer-office{
-    position: relative;
-    max-width: max-content;
-    margin-left: 3.5rem;
-    color: var(--text);
-    font-size: 1.1em;
-    white-space: nowrap;
-}
-
-#footer-office::before{
-    content: '';
-    animation: infoSpan 20s infinite;
-}
-
-@keyframes infoSpan {
-    0%,100%{
-        content: "Front-end Developer";
-    }
-}
-
-#footer-office::after{
-    content: '';
-    position: absolute;
-    right: -.4rem;
-    width: calc(100% + .4rem);
-    height: 100%;
-    background-color: var(--header);
-    border-left: 2px solid var(--secondary);
-    animation: cursor .8s infinite, write 20s steps(15) infinite;
-}
-
-@keyframes write {
-    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
-        width: 0;
-    }
-    5%,20%,25%,40%,45%,60%,65%,80%,85%{
-        width: calc(100% + .4rem);
-    }
-}
-
-@keyframes cursor {
-    0%{
-        border-left: 2px solid var(--primary);
-    }
-}
-
 footer p{
     color: var(--text);
 }
