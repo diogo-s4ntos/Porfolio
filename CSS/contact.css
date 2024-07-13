@@ -40,13 +40,14 @@ textarea{
     font-size: .9em;
 }
 
-button{
+form button{
+    padding: 1rem;
     font-size: 1.1em;
     box-shadow: 0px 5px 0px var(--secondary);
     cursor: pointer;
 }
 
-button:active{
+form button:active{
     transform: translateY(5px);
     box-shadow: none;
 }

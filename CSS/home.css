@@ -140,6 +140,10 @@
     height: 2.5rem;
 }
 
+#medias a:hover{
+    transform: scale(1.1);
+}
+
 #linkedin{
     background: url(../ASSETS/icons/linkedin.png) center/contain no-repeat;
 }

@@ -7,3 +7,7 @@ function openPhoneMenu(checkbox) {
         document.getElementById('phone-menu').style.transform = 'translateX(100%)'
     }
 }
+
+function closeMenu() {
+    document.getElementById('phone-menu').style.transform = 'translateX(100%)'
+}
