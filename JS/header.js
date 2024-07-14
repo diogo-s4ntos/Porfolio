@@ -11,4 +11,5 @@ function openPhoneMenu(checkbox) {
 function closeMenu() {
     document.getElementById('phone-menu').style.transform = 'translateX(100%)'
     document.getElementById('menu-button').checked = false
+    document.body.style.overflow = "scroll"
 }
