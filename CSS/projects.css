@@ -34,6 +34,10 @@
     border-radius: 15px;
 }
 
+.pc .base{
+    width: 30rem;
+}
+
 .project-details{
     padding: 2rem 0rem;
     display: flex;
@@ -94,5 +98,15 @@
 @media screen and (max-width: 768px) {
     .pc .monitor{
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .pc .monitor{
+        width: 20rem;
+    }
+
+    .pc .base{
+        width: 15rem;
     }
 }
