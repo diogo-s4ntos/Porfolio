@@ -13,3 +13,15 @@ function closeMenu() {
     document.getElementById('menu-button').checked = false
     document.body.style.overflow = "scroll"
 }
+
+const processScroll = () => {
+    const { scrollTop, scrollHeight } = document.documentElement || document.body;
+    const scrollPercent =
+      (scrollTop / (scrollHeight - window.innerHeight)) * 100 + "%";
+  
+    document
+      .getElementById("expandingSpan")
+      .style.setProperty("--scrollAmount", scrollPercent);
+  };
+  
+  document.addEventListener("scroll", processScroll);

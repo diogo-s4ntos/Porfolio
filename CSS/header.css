@@ -23,6 +23,18 @@ header nav li a, header nav li{
     text-decoration: none;
 }
 
+#expandingSpan{
+    --scrollAmount: 0%;
+    position: fixed;
+    top: 3.8rem;
+    width: var(--scrollAmount);
+    height: .5rem;
+    background-color: var(--secondary);
+    display: flex;
+    z-index: 999;
+}
+
+
 #menu-button{
     appearance: none;
     width: 2rem;
