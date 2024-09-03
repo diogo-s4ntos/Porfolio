@@ -1,6 +1,6 @@
 #home{
-    min-height: calc(100lvh - 4.8rem);
-    padding: 4.8rem 12rem 0rem 12rem;
+    min-height: calc(100lvh - 7.8rem);
+    padding: 5.8rem 12rem 2rem 12rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -98,7 +98,7 @@
 } */
 
 #projects-button{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,6 +159,14 @@
 }
 
 @media screen and (max-width: 650px) {
+    #home{
+        gap: 0rem;
+    }
+
+    #avatar{
+        width: 16.5rem;
+    }
+
     #main-info{
         text-align: center;
         align-items: center;
