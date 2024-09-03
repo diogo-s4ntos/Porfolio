@@ -12,6 +12,7 @@
     width: 28rem;
     max-width: 100%;
     border-radius: 15px;
+    opacity: .85;
 }
 
 #main-info{
