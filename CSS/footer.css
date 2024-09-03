@@ -16,6 +16,7 @@ footer div{
 
 footer p{
     color: var(--text);
+    opacity: .5;
 }
 
 @media screen and (max-width: 1020px) {
