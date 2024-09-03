@@ -161,6 +161,7 @@
 @media screen and (max-width: 650px) {
     #home{
         flex-direction: column;
+        justify-content: start;
     }
 
     #avatar{
@@ -174,5 +175,9 @@
 
     #main-info h1{
         font-size: 3em;
+    }
+
+    #medias{
+        opacity: .8;
     }
 }
