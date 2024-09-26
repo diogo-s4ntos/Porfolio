@@ -141,7 +141,10 @@
 
 @media screen and (max-width: 650px) {
     #home{
+        min-height: calc(100lvh - 9rem);
+        padding: 8rem 1rem 2rem 1rem;
         flex-direction: column;
+        justify-content: start;
     }
 
     #avatar{
