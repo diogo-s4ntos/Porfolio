@@ -32,7 +32,7 @@
     white-space: nowrap;
 }
 
-#office{
+#office-role{
     position: relative;
     max-width: max-content;
     font-size: 1.4em;
@@ -40,18 +40,18 @@
     margin-left: .3rem;
 }
 
-#office::before{
+#office-role::before{
     content: '';
     animation: infoSpan 20s infinite;
 }
 
 @keyframes infoSpan {
     0%,100%{
-        content: "Front-end Developer";
+        content: "Full-stack developer";
     }
 }
 
-#office::after{
+#office-role::after{
     content: '';
     position: absolute;
     right: -.4rem;
