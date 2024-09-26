@@ -97,6 +97,7 @@
 
     .project-details{
         padding: 2rem 0rem;
+        margin: 0;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -108,7 +109,6 @@
 @media screen and (max-width: 1020px) {
     #projects{
         padding: 5.8rem 1rem 2rem 1rem;
-        flex-direction: column;
     }
 }
 
