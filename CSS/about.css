@@ -37,6 +37,10 @@
     color: var(--text);
 }
 
+#about-info p b{
+    color: var(--secondary);
+}
+
 #about-me{
     font-size: 1.15em;
     line-height: 2rem;
