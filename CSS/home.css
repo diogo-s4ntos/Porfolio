@@ -77,26 +77,6 @@
     }
 }
 
-/* #cv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#cv a{
-    color: var(--text);
-    text-decoration: none;
-    border: 2px solid var(--secondary);
-    border-radius: 15px;
-    box-shadow: 0px 5px 1px var(--secondary);
-    padding: 1rem;
-}
-
-#cv a:active{
-    transform: translateY(5px);
-    box-shadow: none;
-} */
-
 #projects-button{
     margin-top: 1rem;
     display: flex;
@@ -129,7 +109,7 @@
     border-bottom-right-radius: 15px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .5rem;
     align-items: center;
     justify-content: center;
 }
@@ -137,10 +117,6 @@
 #medias a{
     width: 2.5rem;
     height: 2.5rem;
-}
-
-#medias a:hover{
-    transform: scale(1.1);
 }
 
 #linkedin{
