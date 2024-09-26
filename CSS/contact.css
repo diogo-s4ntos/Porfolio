@@ -75,3 +75,9 @@ form button:active{
         flex-direction: column;
     }
 }
+
+@media screen and (max-width: 430px) {
+    form button{
+        grid-column: span 2;
+    }
+}
