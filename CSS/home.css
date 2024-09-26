@@ -109,14 +109,19 @@
     border-bottom-right-radius: 15px;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .8rem;
     align-items: center;
     justify-content: center;
 }
 
 #medias a{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.65rem;
+    height: 2.65rem;
+    transition: .3s ease;
+}
+
+#medias a:hover{
+    transform: scale(1.1);
 }
 
 #linkedin{
