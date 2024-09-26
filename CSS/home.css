@@ -142,7 +142,6 @@
 @media screen and (max-width: 650px) {
     #home{
         flex-direction: column;
-        justify-content: start;
     }
 
     #avatar{
