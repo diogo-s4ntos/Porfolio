@@ -64,19 +64,22 @@ header nav li a, header nav li{
     width: 2rem;
     height: 2rem;
     background: url(../ASSETS/icons/menu.png) center/contain no-repeat;
+    transition: .3s ease;
     display: none;
+    z-index: 999;
 }
 
 #menu-button:checked{
+    transform: rotate(180deg);
     background: url(../ASSETS/icons/close.png) center/contain no-repeat;
 }
 
 #phone-menu{
     position: fixed;
-    top: 3.8rem;
-    width: 100%;
-    height: calc(100% - 3.8rem);
-    padding: 3rem 1.5rem 1.5rem 1.5rem;
+    top: 0rem;
+    width: calc(100% - 5.5rem);
+    height: calc(100lvh - 9.5rem);
+    padding: 8rem 1.5rem 1.5rem 4rem;
     background-color: var(--primary);
     transform: translateX(100%);
     transition: .3s ease;
