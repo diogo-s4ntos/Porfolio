@@ -1,9 +1,9 @@
 function openPhoneMenu(checkbox) {
     if (checkbox.checked) {
-        document.body.style.overflow = "hidden"
+        document.body.style.overflowY = "hidden"
         document.getElementById('phone-menu').style.transform = 'translateX(0%)'
     } else {
-        document.body.style.overflow = "scroll"
+        document.body.style.overflowY = "scroll"
         document.getElementById('phone-menu').style.transform = 'translateX(100%)'
     }
 }
@@ -11,7 +11,7 @@ function openPhoneMenu(checkbox) {
 function closeMenu() {
     document.getElementById('phone-menu').style.transform = 'translateX(100%)'
     document.getElementById('menu-button').checked = false
-    document.body.style.overflow = "scroll"
+    document.body.style.overflowY = "scroll"
 }
 
 const processScroll = () => {
