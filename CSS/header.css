@@ -101,7 +101,7 @@ header nav li a, header nav li{
 }
 
 .contact-button{
-    color: var(--primary);
+    color: var(--text);
     background-color: var(--secondary);
     border-radius: 5px;
     padding: .3rem;
