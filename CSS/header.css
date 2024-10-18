@@ -31,10 +31,14 @@ header::after{
 }
 
 header nav{
+    display: flex;
+    z-index: 999;
+}
+
+header nav ul{
     list-style: none;
     display: flex;
     gap: 2rem;
-    z-index: 999;
 }
 
 header nav li a, header nav li{
@@ -87,7 +91,7 @@ header nav li a, header nav li{
     z-index: 2;
 }
 
-#phone-menu nav{
+#phone-menu nav ul{
     list-style: none;
     display: flex;
     flex-direction: column;

@@ -25,3 +25,40 @@ const processScroll = () => {
   };
   
   document.addEventListener("scroll", processScroll);
+
+  function isSectionVisible(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      return rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
+    }
+    return false;
+  }
+
+  function updateMenuColor() {
+    const sections = ["home", "about", "projects", "contact"];
+    const navLinks = document.querySelectorAll("nav ul li a");
+    const phoneMenuLinks = document.querySelectorAll("div nav ul li a");
+
+    sections.forEach((sectionId, index) => {
+      const link = navLinks[index];
+      const phoneMenuLink = phoneMenuLinks[index];
+      if (this.isSectionVisible(sectionId)) {
+        link.style.color = "var(--secondary)";
+        phoneMenuLink.style.marginLeft = "1rem";
+        if(sectionId == 'contact') {
+            link.style.color = "var(--primary)";
+            phoneMenuLink.style.color = "var(--primary)";
+        } else {
+            phoneMenuLink.style.color = "var(--secondary)";
+        }
+      } else {
+        link.style.color = "var(--text)";
+        phoneMenuLink.style.color = "var(--text)";
+        phoneMenuLink.style.marginLeft = "0rem";
+      }
+    });
+  }
+
+    window.addEventListener("scroll", this.updateMenuColor);
+    this.updateMenuColor();
