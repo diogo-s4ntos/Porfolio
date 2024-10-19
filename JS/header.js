@@ -36,7 +36,7 @@ const processScroll = () => {
   }
 
   function updateMenuColor() {
-    const sections = ["home", "about", "projects", "contact"];
+    const sections = ["home", "about", "projects", "testimonials", "contact"];
     const navLinks = document.querySelectorAll("nav ul li a");
     const phoneMenuLinks = document.querySelectorAll("div nav ul li a");
 

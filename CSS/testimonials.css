@@ -1,0 +1,115 @@
+#testimonials{
+    padding: 7rem 12rem 2rem 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem
+}
+
+#testimonials h2{
+    position: relative;
+    width: fit-content;
+    color: var(--secondary);
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonials h2::after{
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 80%;
+    height: .2rem;
+    background-color: var(--secondary);
+    border-radius: 25px;
+}
+
+#testimonials div{
+    /* display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+#testimonials .card{
+    position: relative;
+    padding: 4rem 1.5rem 1.5rem 1.5rem;
+    margin-top: 3rem;
+    color: var(--text);
+    background-color: var(--header);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px var(--secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#testimonials .card img{
+    position: absolute;
+    top: -3.5rem;
+    width: 5.5rem;
+    border: .65rem solid var(--primary);
+    border-radius: 50%;
+}
+
+#testimonials .card p{
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+#testimonials .card p b{
+    color: var(--secondary);
+    font-size: 1.8em;
+}
+
+#testimonials .card p b:nth-child(1){
+    padding-right: .5rem;
+}
+
+#testimonials .card p b:nth-child(2){
+    padding-left: .5rem;
+}
+
+#testimonials span{
+    position: relative;
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+}
+
+#testimonials span b{
+    color: var(--secondary);
+    font-size: 1.35em;
+}
+
+#testimonials span::before{
+    content: '';
+    position: absolute;
+    left: -3.5rem;
+    width: 3rem;
+    height: 1px;
+    background-color: var(--secondary);
+}
+
+#testimonials span::after{
+    content: '';
+    position: absolute;
+    right: -3.5rem;
+    width: 3rem;
+    height: 1px;
+    background-color: var(--secondary);
+}
+
+@media screen and (max-width: 1020px){
+    #testimonials{
+        padding: 7rem 1rem 2rem 1rem;
+    }
+}
