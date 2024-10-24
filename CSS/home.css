@@ -1,39 +1,33 @@
 #home{
+    position: relative;
     min-height: calc(100lvh - 7.8rem);
     padding: 5.8rem 12rem 2rem 12rem;
     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
     align-items: center;
-    justify-content: center;
-}
-
-#avatar{
-    width: 28rem;
-    border-radius: 15px;
-    opacity: .85;
-}
-
-#main-info{
-    position: relative;
-    color: var(--text);
-    display: flex;
-    gap: .5rem;
-    flex-direction: column;
+    justify-content: space-around;
 }
 
 #main-info h1{
     font-size: 4em;
+    line-height: 6.5rem;
     color: var(--secondary);
     text-shadow: 0px 0px 5px var(--secondary);
     white-space: nowrap;
 }
 
+#home img{
+    width: 26.5rem;
+    opacity: .6;
+    border-radius: 50%;
+}
+
 #office-role{
     position: relative;
     max-width: max-content;
-    font-size: 1.4em;
+    color: var(--text);
+    font-size: 3.5em;
     white-space: nowrap;
+    margin-top: 1.5rem;
     margin-left: .3rem;
 }
 
@@ -75,9 +69,8 @@
 }
 
 #projects-button{
-    margin-top: 1rem;
+    margin-top: 3rem;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
