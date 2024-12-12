@@ -16,8 +16,8 @@
 }
 
 #home img{
-    width: 26.5rem;
-    opacity: .6;
+    width: 28rem;
+    opacity: .8;
     border-radius: 50%;
 }
 
@@ -122,36 +122,41 @@
     background: url(../ASSETS/icons/github.png) center/contain no-repeat;
 }
 
+@media screen and (max-width: 1300px) {
+    #home{
+        justify-content: start;
+    }
+
+    #home img{
+        display: none;
+    }
+
+    #main-info{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 990px) {
     #home{
         min-height: calc(100lvh - 7.8rem);
-        padding: 5.8rem 1rem 2rem 1rem;
+        padding: 5.8rem 1rem 2rem 6rem;
     }
 }
 
 @media screen and (max-width: 650px) {
     #home{
-        min-height: calc(100lvh - 9rem);
-        padding: 8rem 1rem 2rem 1rem;
-        flex-direction: column;
-        justify-content: start;
+        min-height: calc(100lvh - 10rem);
+        padding: 8rem 1rem 2rem 2rem;
     }
 
     #avatar{
         width: 16.5rem;
     }
 
-    #main-info{
-        text-align: center;
-        align-items: center;
-    }
-
     #main-info h1{
-        font-size: 2.5em;
     }
 
-    #medias{
-        opacity: .8;
+    #main-info p{
     }
 }
 
