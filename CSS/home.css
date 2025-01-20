@@ -153,10 +153,8 @@
         width: 16.5rem;
     }
 
-    #main-info h1{
-    }
-
     #main-info p{
+        font-size: 2em;
     }
 }
 
